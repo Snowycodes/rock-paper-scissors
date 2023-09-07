@@ -6,7 +6,6 @@ function getComputerChoice() {
     // generate a random value, 1, 2, or 3. and put into variable
     let randomValue = Math.floor((Math.random() * 3) + 1);
 
-
     // Assign 1 to rock, 2 to paper, 3 to scissors.
     // print the selected value in the console.
     if (randomValue == 1) {
@@ -37,31 +36,44 @@ function playerSelection() {
 
 function playRound(playerSelection, computerSelection) {
 
+    console.log(`Computer used ${computerSelection} and player uses ${playerSelection}`);
+
     if(playerSelection === computerSelection) {
         
-        //draw
+        console.log("It is a draw!")
+
     } else if(playerSelection === "ROCK" && computerSelection === "PAPER") {
-        // you lose
+
+        console.log(` PAPER beats ROCK! You lose!`)
+
     } else if(playerSelection === "ROCK" && computerSelection === "SCISSORS") {
-        //you win
+
+        console.log(`ROCK BEATS SCISSORS You win!`)
+        
     } else if(playerSelection === "PAPER" && computerSelection === "SCISSORS") {
-        //you lose
+        
+        console.log(`SCISSORS beats PAPER! You lose!`)
+       
     }else if(playerSelection === "PAPER" && computerSelection === "ROCK") {
-        //you win
+
+        console.log(`PAPER BEATS ROCK You win!`)
+     
     }else if(playerSelection === "SCISSORS" && computerSelection === "ROCK") {
-        //you lose
+
+        console.log(`ROCK beats SCISSORS! You lose!`)
+       
     } else if(playerSelection === "SCISSORS" && computerSelection === "PAPER" ) {
-        //you win
+
+        console.log(`SCISSORS beats PAPER You win!`)
+        
     } else {
-        console.log("invalid input")
+        console.log("invalid player input")
     }
-
-
-
-
-
    
 }
 
+
+
+playRound(playerSelection(), getComputerChoice())
 
 
