@@ -23,19 +23,21 @@ function getComputerChoice() {
 
     }
 
-
     return result;
 }
 
+// Function to collect input, makes it uppercase so the input is always uniform
+function playerSelection() {
 
-console.log(getComputerChoice())
+    let input = prompt("Please enter rock/paper/scissors to play").toUpperCase();
+
+    return input;
+}
 
 
-
-
-// function playRound(playerSelection, computerSelection) {
-//    // your code here!
-// }
+function playRound(playerSelection, computerSelection) {
+   
+}
 
 
 
