@@ -36,6 +36,30 @@ function playerSelection() {
 
 
 function playRound(playerSelection, computerSelection) {
+
+    if(playerSelection === computerSelection) {
+        
+        //draw
+    } else if(playerSelection === "ROCK" && computerSelection === "PAPER") {
+        // you lose
+    } else if(playerSelection === "ROCK" && computerSelection === "SCISSORS") {
+        //you win
+    } else if(playerSelection === "PAPER" && computerSelection === "SCISSORS") {
+        //you lose
+    }else if(playerSelection === "PAPER" && computerSelection === "ROCK") {
+        //you win
+    }else if(playerSelection === "SCISSORS" && computerSelection === "ROCK") {
+        //you lose
+    } else if(playerSelection === "SCISSORS" && computerSelection === "PAPER" ) {
+        //you win
+    } else {
+        console.log("invalid input")
+    }
+
+
+
+
+
    
 }
 
